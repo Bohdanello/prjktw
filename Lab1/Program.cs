@@ -4,13 +4,13 @@ Biblioteka biblioteka = Biblioteka.Instance;
 Console.Write("Następująca instancja biblioteki jest tą samą: ");
 Console.WriteLine(biblioteka.Equals(Biblioteka.Instance) ? "Tak" : "Nie");
 
-biblioteka.DodajPozycje(biblioteka.StworzPozycje("aaabbbb", "123456789", "Ksiazka", new DateTime(2000, 1, 1)));
-biblioteka.DodajPozycje(biblioteka.StworzPozycje("abc123", "Hello, World!", "Muzyka", new DateTime(2000, 1, 1)));
-biblioteka.DodajPozycje(biblioteka.StworzPozycje("aaabbbb", "123456789", "AudioKsiazka", new DateTime(2000, 1, 1)));
-biblioteka.DodajPozycje(biblioteka.StworzPozycje("Przykładowy tytuł", "123456789", "Filmy", new DateTime(2000, 1, 1)));
-biblioteka.DodajPozycje(biblioteka.StworzPozycje("aduawidhadw", "123456789", "Filmy", new DateTime(2000, 1, 1)));
-biblioteka.DodajPozycje(biblioteka.StworzPozycje("hello", "123456789", "Ksiazka", new DateTime(2000, 1, 1)));
-biblioteka.DodajPozycje(biblioteka.StworzPozycje("aaabbbb", "123456789", "Ksiazka", new DateTime(2000, 1, 1)));
+biblioteka.DodajPozycje(biblioteka.StworzPozycje("Jeff Bezos", "Amazon", "Ksiazka", new DateTime(2000, 1, 1)));
+biblioteka.DodajPozycje(biblioteka.StworzPozycje("Elon Mask", "Tesla", "AudioKsiazka", new DateTime(2000, 1, 1)));
+biblioteka.DodajPozycje(biblioteka.StworzPozycje("Feliks Kurp", "Programowanie", "Ksiazka", new DateTime(2000, 1, 1)));
+biblioteka.DodajPozycje(biblioteka.StworzPozycje("Agnieszka Peszek", "I co dalej?", "AudioKsiazka", new DateTime(2000, 1, 1)));
+biblioteka.DodajPozycje(biblioteka.StworzPozycje("Karin Slaughter", "Blondynka, niebieskie oczy", "Ksiazka", new DateTime(2000, 1, 1)));
+biblioteka.DodajPozycje(biblioteka.StworzPozycje("Edgar Allan Poe", "Czarny kot", "Ksiazka", new DateTime(2000, 1, 1)));
+biblioteka.DodajPozycje(biblioteka.StworzPozycje("Aleksander Fredro", "Zemsta", "Ksiazka", new DateTime(2000, 1, 1)));
 
 bool petla = true;
 int liczba = 7;
