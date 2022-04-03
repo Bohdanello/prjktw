@@ -2,7 +2,7 @@
 {
     public override void Odtworz(IPozycja pozycja)
     {
-        if (pozycja is not Ksiazka && pozycja is not AudioKsiazka)
+        if (pozycja is not Muzyka && pozycja is not AudioKsiazka)
         {
             throw new InvalidOperationException("Pozycja nie jest muzyką lub audioksiążką. Otrzymałem: " + pozycja.GetInformacje());
         }
