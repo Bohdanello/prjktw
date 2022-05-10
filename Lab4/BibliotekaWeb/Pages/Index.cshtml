@@ -1,0 +1,34 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Biblioteka Online</h1>
+
+    <form method="post">
+        <label>Wyszukaj: <input type="text" asp-for="Search" placeholder="aaaaaabbbbbbccccc" value=@Model.Search /></label>
+        <input type="submit" value="Szukaj" />
+    </form>
+
+    <div>
+        @{
+            if (Model.Pozycje is null) { <p>Ładowanie...</p> }
+            else if (Model.Pozycje.Any())
+            {
+                @foreach (var pozycja in Model.Pozycje)
+                {
+                    <div class="pozycja">
+                        <label>Tytuł: @pozycja["tytul"]</label>
+                        <label>Opis: @pozycja["opis"]</label>
+                        <label>Autor: @pozycja["author"]</label>
+                        <label>Rodzaj: @pozycja["rodzaj"]</label>
+                        <label>Data Publikacji: @pozycja["dataPublikacji"]</label>
+                    </div>
+                }
+            }
+            else { <p>Biblioteka jest pusta</p> }
+        }
+    </div>
+</div>
